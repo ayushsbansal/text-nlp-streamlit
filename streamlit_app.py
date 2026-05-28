@@ -9,6 +9,8 @@ st.set_page_config(
     layout="wide"
 )
 
+SERVER_URL = st.secrets.get("SERVER_URL", "http://localhost:8000")
+
 def main():
 	st.title("Text-to-SQL NLP Application")
 	st.write("Enter a natural language query to generate SQL code.")
