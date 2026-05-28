@@ -3,7 +3,6 @@ import requests
 import argparse
 
 # Get the server URL from command line arguments
-SERVER_URL = "http://localhost:8000"
 
 st.set_page_config(
     page_title="Text-to-SQL NLP",
