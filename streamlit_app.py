@@ -13,7 +13,7 @@ SERVER_URL = st.secrets.get("SERVER_URL")
 
 def main():
 	st.title("Text-to-SQL NLP Application")
-	st.write("Backend hosted at: ${SERVER_URL}")
+	st.write(f"Backend hosted at: {SERVER_URL}")
 	st.write("Enter a natural language query to generate SQL code.")
 
 	user_input = st.text_input("Natural Language Query", "Find all employees in Singapore")
